@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTIONS</title>
+</head>
+<center>
+    <header style="background-color: bisque;color:black">
+      <h1>QUIZ QUESTIONS</h1>
+    </header></center>
+    </center><body style="background-image: url(bg.jpeg);background-size:1500px;font-size: 20px;">
+    <div style="width: 40%; background-color:rgb(230, 235, 233); height:20%;display:table;">
+  <p>
+    <label style="touch-action: auto; display:right">
+     It is raining outside?(yes or no) <input type="text" id="demo1"/>
+    </label>
+    <button onclick="myfunction1()" value="submit">submit</button></p>
+    <marquee><p id="demo2"></p></marquee>
+    </div>
+
+    <div style="width: 40%; background-color:rgb(230, 235, 233); height:20%;display:table;">
+  <p>
+    <label style="touch-action: auto; display:right">
+     are there any cookies left?(yes or no) <input type="text" id="demo3"/>
+    </label>
+    <button onclick="myfunction2()" value="submit">submit</button></p>
+    <marquee><p id="demo4"></p></marquee>
+    </div>
+
+    <div style="width: 40%; background-color:rgb(230, 235, 233); height:20%;display:table;">
+  <p>
+    <label style="touch-action: auto; display:right">
+     did you brush your teeth?(yes or no) <input type="text" id="demo5"/>
+    </label>
+    <button onclick="myfunction3()" value="submit">submit</button></p>
+    <marquee><p id="demo6"></p></marquee>
+    </div>
+
+    <div style="width: 40%; background-color:rgb(230, 235, 233); height:20%;display:table;">
+  <p>
+    <label style="touch-action: auto; display:right">
+     is it your birthday today?(yes or no) <input type="text" id="demo9"/>
+    </label>
+    <button onclick="myfunction5()" value="submit">submit</button></p>
+    <marquee><p id="demo10"></p></marquee>
+    </div>
+    <script>
+        function myfunction1(){
+        var a=document.getElementById("demo1").value;
+        if(a=="yes"){
+            b="great job";
+        }else{
+            b="finish work before playing";
+        }
+        document.getElementById("demo2").innerHTML=b;
+    }
+
+    function myfunction2(){
+        var a=document.getElementById("demo3").value;
+        if(a=="yes"){
+            b="would you like a cookies";
+        }else{
+            b="more cookies";
+        }
+        document.getElementById("demo4").innerHTML=b;
+    }
+
+    function myfunction3(){
+        var a=document.getElementById("demo5").value;
+        if(a=="yes"){
+            b="clean";
+        }else{
+            b="go bursh your teeth now";
+        }
+        document.getElementById("demo6").innerHTML=b;
+    }
+
+    function myfunction5(){
+        var a=document.getElementById("demo9").value;
+        if(a=="yes"){
+            b="happy birthday";
+        }else{
+            b="have a great day";
+        }
+        document.getElementById("demo10").innerHTML=b;
+    }
+
+    
+
+
+    </script></center></body></html>
